@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;600;700;800&family=Dancing+Script:wght@400;700&family=Inter:wght@400;500;600&family=Lora:ital,wght@0,400;0,700;1,400&family=Quicksand:wght@500;700&family=Comfortaa:wght@400;700&display=swap');
+
+@theme {
+  --color-vn-red: #DA251D;
+  --color-vn-gold: #FFFF00;
+  --color-lotus-pink: #FDCAD2;
+  --color-lotus-dark: #C71585;
+
+  --font-dancing: "Dancing Script", cursive;
+  --font-vietnam: "Be Vietnam Pro", sans-serif;
+  --font-inter: Inter, sans-serif;
+  --font-lora: Lora, serif;
+  --font-rounded: "Comfortaa", sans-serif;
+
+  --animate-gold-shimmer: shimmer 3s infinite linear;
+  --animate-float: float 6s ease-in-out infinite;
+
+  @keyframes shimmer {
+    0% { background-position: -200% center; }
+    100% { background-position: 200% center; }
+  }
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+  }
+}
+
+:root {
+  font-family: var(--font-inter), system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #0a0a0a;
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+.text-gold-gradient {
+  background: linear-gradient(to right, #fef08a 0%, #eab308 50%, #fef08a 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333333;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #444444;
+}
