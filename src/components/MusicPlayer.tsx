@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Music, Volume2, SkipBack, SkipForward, Play, Pause, X, ChevronRight } from 'lucide-react';
+import { Music, Volume2, SkipBack, SkipForward, Play, Pause, X } from 'lucide-react';
 
 interface Track {
   title: string;
