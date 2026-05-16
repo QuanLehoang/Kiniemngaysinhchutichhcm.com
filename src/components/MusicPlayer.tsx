@@ -13,56 +13,56 @@ const playlist: Track[] = [
   {
     title: "Như Có Bác Hồ Trong Ngày Vui Đại Thắng",
     artist: "Tốp ca",
-    url: "/Nhucobachotrongngayvuidaithang.mp3",
-    cover: "dianhac1.png"
+    url: "audio/Nhucobachotrongngayvuidaithang.mp3",
+    cover: "images/dianhac1.png"
   },
   {
     title: "Tiếng Hát Từ Thành Phố Mang Tên Người",
     artist: "NSND Tạ Minh Tâm",
-    url: "Tiếng Hát Từ Thành Phố Mang Tên Người.mp3",
-    cover: "dianhac1.png"
+    url: "audio/Tiếng Hát Từ Thành Phố Mang Tên Người.mp3",
+    cover: "images/dianhac1.png"
   },
   {
     title: "Dấu Chân Phía Trước",
     artist: "NSND Trọng Tấn",
-    url: "Dấu Chân Phía Trước.mp3",
-    cover: "dianhac1.png"
+    url: "audio/Dấu Chân Phía Trước.mp3",
+    cover: "images/dianhac1.png"
   },
   {
     title: "Bác Hồ Một Tình Yêu Bao La",
     artist: "NSND Thu Hiền",
-    url: "Bác Hồ Một Tình Yêu Bao La.mp3",
-    cover: "dianhac1.png"
+    url: "audio/Bác Hồ Một Tình Yêu Bao La.mp3",
+    cover: "images/dianhac1.png"
   },
   {
     title: "Người Về Thăm Quê",
     artist: "Phạm Phương Thảo",
-    url: "Người Về Thăm Quê.mp3",
-    cover: "dianhac1.png"
+    url: "audio/Người Về Thăm Quê.mp3",
+    cover: "images/dianhac1.png"
   },
   {
     title: "Bác Đang Cùng Chúng Cháu Hành Quân",
     artist: "Tốp ca nam",
-    url: "Liên Khúc_ Bác Đang Cùng Cháu Hành Quân - Thanh Niên Làm Theo Lời Bác - Tuổi Trẻ Thế Hệ Bác Hồ.mp3",
-    cover: "dianhac1.png"
+    url: "audio/Liên Khúc_ Bác Đang Cùng Cháu Hành Quân - Thanh Niên Làm Theo Lời Bác - Tuổi Trẻ Thế Hệ Bác Hồ.mp3",
+    cover: "images/dianhac1.png"
   },
   {
     title: "Ca Ngợi Hồ Chủ Tịch",
     artist: "Hợp xướng",
-    url: "Ca Ngợi Hồ Chủ Tịch.mp3",
-    cover: "dianhac1.png"
+    url: "audio/Ca Ngợi Hồ Chủ Tịch.mp3",
+    cover: "images/dianhac1.png"
   },
   {
     title: "Tuổi Trẻ Thế Hệ Bác Hồ",
     artist: "Tốp ca trẻ",
-    url: "Tuổi Trẻ Thế Hệ Bác Hồ.mp3",
-    cover: "dianhac1.png"
+    url: "audio/Tuổi Trẻ Thế Hệ Bác Hồ.mp3",
+    cover: "images/dianhac1.png"
   },
   {
     title: "Ai Yêu Bác Hồ Chí Minh Hơn Thiếu Niên Nhi Đồng",
     artist: "Tốp ca nhi đồng",
-    url: "Ai_Yeu_Bac_Ho_Chi_Minh_Hon_Thieu_Nien_Nhi_Dong_-_Various_Artists_4f71d.mp3",
-    cover: "dianhac1.png"
+    url: "audio/Ai_Yeu_Bac_Ho_Chi_Minh_Hon_Thieu_Nien_Nhi_Dong_-_Various_Artists_4f71d.mp3",
+    cover: "images/dianhac1.png"
   }
 ];
 

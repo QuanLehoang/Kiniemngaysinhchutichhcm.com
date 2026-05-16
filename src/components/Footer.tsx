@@ -6,7 +6,7 @@ const Footer: React.FC = () => {
       <div className="max-w-6xl mx-auto px-6 text-center">
         <div className="flex justify-center mb-8">
           <img
-            src="/LacoVn.png"
+            src="images/LacoVn.png"
             alt="Cờ Việt Nam"
             className="h-30 w-auto object-contain drop-shadow-[0_0_40px_rgba(218,37,29,0.8)]"
           />

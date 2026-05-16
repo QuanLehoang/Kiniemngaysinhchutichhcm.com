@@ -16,7 +16,7 @@ const Hero: React.FC = () => {
           playsInline
           className="w-full h-full object-cover"
         >
-          <source src="/HoChiMinh.mp4" type="video/mp4" />
+          <source src="video/HoChiMinh.mp4" type="video/mp4" />
           Trình duyệt của bạn không hỗ trợ xem video.
         </video>
         {/* Lớp phủ màu tối để chữ nổi bật hơn */}

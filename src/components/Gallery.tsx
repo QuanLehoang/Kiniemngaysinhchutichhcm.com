@@ -2,17 +2,17 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const images = [
-  { url: '/Anh1.png', title: 'Bác Hồ đọc tuyên ngôn độc lập', desc: 'Khoảnh khắc lịch sử tại Quảng trường Ba Đình ngày 2/9/1945.', size: 'md:col-span-2 md:row-span-2' },
-  { url: '/AnhBacdanglamviectaiBacBo.jpg', title: 'Bác Hồ làm việc', desc: 'Bác Hồ làm việc trong hang đá ở Việt Bắc năm 1951.', size: 'md:col-span-1 md:row-span-1' },
-  { url: '/Bacvoithieunhi.png', title: 'Bác Hồ với thiếu nhi', desc: 'Hình ảnh Bác Hồ với thiếu niên, nhi đồng Việt Nam.', size: 'md:col-span-1 md:row-span-1' },
-  { url: '/LoidaycuaBacvecaytrong.png', title: 'Bác Hồ giữa thiên nhiên', desc: 'Lối sống giản dị, thanh cao và tình yêu thiên nhiên của Bác.', size: 'md:col-span-2 md:row-span-1' },
-  { url: '/AnhBac6.jpg', title: 'Chủ tịch Hồ Chí Minh về thăm quê hương Nghệ An lần thứ hai (1961)', desc: 'Khoảnh khắc xúc động này thể hiện tình cảm gắn bó máu thịt, sâu nặng của vị Lãnh tụ dành cho quê hương xứ Nghệ.', size: 'md:col-span-1 md:row-span-2' },
-  { url: '/AnhBac2.jpg', title: 'Bác Hồ thăm đơn vị pháo cao xạ bảo vệ vùng trời Bắc Bộ (1964)', desc: 'Chủ tịch Hồ Chí Minh đến thăm và động viên các chiến sĩ trận địa pháo cao xạ bảo vệ vùng trời Thái Nguyên năm 1964.', size: 'md:col-span-1 md:row-span-1' },
-  { url: '/AnhBac.jpg', title: 'Bác Hồ trong Chiến dịch Biên giới Thu Đông 1950', desc: 'Chủ tịch Hồ Chí Minh trực tiếp quan sát và chỉ đạo trận đánh Đông Khê trong Chiến dịch Biên giới Thu Đông năm 1950.', size: 'md:col-span-1 md:row-span-1' },
-  { url: '/AnhBac3.jpg', title: 'Tình yêu thương bao la của Bác Hồ dành cho thiếu niên, nhi đồng', desc: 'Hình ảnh Chủ tịch Hồ Chí Minh ôm hôn em bé tại chiến khu Việt Bắc thể hiện sự giản dị, gần gũi và tình cảm nồng ấm của Người.', size: 'md:col-span-1 md:row-span-2' },
-  { url: '/HinhanhBacchupcungcacnhanvatnoitieng.jpg', title: 'Ảnh lưu niệm', desc: 'Bác chụp cùng các lãnh đạo và sĩ quan quân đội.', size: 'md:col-span-2 md:row-span-1' },
-  { url: '/AnhBac4.jpg', title: 'Bác Hồ với thiếu nhi các dân tộc tại Chiến khu Việt Bắc (1954)', desc: 'Chủ tịch Hồ Chí Minh đeo khăn quàng đỏ, nở nụ cười hiền hậu giữa niềm vui tươi, phấn khởi của các em nhỏ vùng cao.', size: 'md:col-span-1 md:row-span-1' },
-  { url: '/AnhBac5.jpg', title: 'Bác Hồ với các đại biểu quốc tế tại Thủ đô Hà Nội', desc: 'Chủ tịch Hồ Chí Minh giản dị, phong thái ung dung tự tại khi đón tiếp và trò chuyện cùng những người bạn quốc tế.', size: 'md:col-span-1 md:row-span-1' },
+  { url: 'images/Anh1.png', title: 'Bác Hồ đọc tuyên ngôn độc lập', desc: 'Khoảnh khắc lịch sử tại Quảng trường Ba Đình ngày 2/9/1945.', size: 'md:col-span-2 md:row-span-2' },
+  { url: 'images/AnhBacdanglamviectaiBacBo.jpg', title: 'Bác Hồ làm việc', desc: 'Bác Hồ làm việc trong hang đá ở Việt Bắc năm 1951.', size: 'md:col-span-1 md:row-span-1' },
+  { url: 'images/Bacvoithieunhi.png', title: 'Bác Hồ với thiếu nhi', desc: 'Hình ảnh Bác Hồ với thiếu niên, nhi đồng Việt Nam.', size: 'md:col-span-1 md:row-span-1' },
+  { url: 'images/LoidaycuaBacvecaytrong.png', title: 'Bác Hồ giữa thiên nhiên', desc: 'Lối sống giản dị, thanh cao và tình yêu thiên nhiên của Bác.', size: 'md:col-span-2 md:row-span-1' },
+  { url: 'images/AnhBac6.jpg', title: 'Chủ tịch Hồ Chí Minh về thăm quê hương Nghệ An lần thứ hai (1961)', desc: 'Khoảnh khắc xúc động này thể hiện tình cảm gắn bó máu thịt, sâu nặng của vị Lãnh tụ dành cho quê hương xứ Nghệ.', size: 'md:col-span-1 md:row-span-2' },
+  { url: 'images/AnhBac2.jpg', title: 'Bác Hồ thăm đơn vị pháo cao xạ bảo vệ vùng trời Bắc Bộ (1964)', desc: 'Chủ tịch Hồ Chí Minh đến thăm và động viên các chiến sĩ trận địa pháo cao xạ bảo vệ vùng trời Thái Nguyên năm 1964.', size: 'md:col-span-1 md:row-span-1' },
+  { url: 'images/AnhBac.jpg', title: 'Bác Hồ trong Chiến dịch Biên giới Thu Đông 1950', desc: 'Chủ tịch Hồ Chí Minh trực tiếp quan sát và chỉ đạo trận đánh Đông Khê trong Chiến dịch Biên giới Thu Đông năm 1950.', size: 'md:col-span-1 md:row-span-1' },
+  { url: 'images/AnhBac3.jpg', title: 'Tình yêu thương bao la của Bác Hồ dành cho thiếu niên, nhi đồng', desc: 'Hình ảnh Chủ tịch Hồ Chí Minh ôm hôn em bé tại chiến khu Việt Bắc thể hiện sự giản dị, gần gũi và tình cảm nồng ấm của Người.', size: 'md:col-span-1 md:row-span-2' },
+  { url: 'images/HinhanhBacchupcungcacnhanvatnoitieng.jpg', title: 'Ảnh lưu niệm', desc: 'Bác chụp cùng các lãnh đạo và sĩ quan quân đội.', size: 'md:col-span-2 md:row-span-1' },
+  { url: 'images/AnhBac4.jpg', title: 'Bác Hồ với thiếu nhi các dân tộc tại Chiến khu Việt Bắc (1954)', desc: 'Chủ tịch Hồ Chí Minh đeo khăn quàng đỏ, nở nụ cười hiền hậu giữa niềm vui tươi, phấn khởi của các em nhỏ vùng cao.', size: 'md:col-span-1 md:row-span-1' },
+  { url: 'images/AnhBac5.jpg', title: 'Bác Hồ với các đại biểu quốc tế tại Thủ đô Hà Nội', desc: 'Chủ tịch Hồ Chí Minh giản dị, phong thái ung dung tự tại khi đón tiếp và trò chuyện cùng những người bạn quốc tế.', size: 'md:col-span-1 md:row-span-1' },
 ];
 
 const Gallery: React.FC = () => {
