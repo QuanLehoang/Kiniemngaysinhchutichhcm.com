@@ -5,8 +5,9 @@ import Guestbook from './components/Guestbook';
 import Gallery from './components/Gallery';
 import QuoteSection from './components/QuoteSection';
 import DiChucBacHo from './components/DiChucBacHo'; 
-// 1. Import thêm cấu trúc component Tiểu sử gia đình vào đây
 import TieuSuGiaDinh from './components/TieuSuGiaDinh'; 
+// 1. Import component Video tư liệu vào đây
+import VideoTuLieu from './components/VideoTuLieu'; 
 import Footer from './components/Footer';
 import FallingPetals from './components/FallingPetals';
 import MusicPlayer from './components/MusicPlayer';
@@ -19,20 +20,23 @@ function App() {
       <Header />
 
       <main>
-        <Hero />
-        <Timeline />
-        <TieuSuGiaDinh />
-        <Gallery />
-        <DiChucBacHo />
-        <QuoteSection />
-        
-        {/* 2. Đặt Di chúc và Tiểu sử gia đình xếp dọc ngay dưới Lời trích và trên Bảng tin */}
-        
-        
+         <Hero />
 
+        <Timeline />
+
+        <TieuSuGiaDinh />
+
+        <Gallery />
+
+        <DiChucBacHo />
+
+        <QuoteSection />
+
+        {/* Bảng tin cảm xúc lưu niệm */}
+        <VideoTuLieu />
         <Guestbook />
         
-        {/* Khu vực thẻ bài 3D được chuyển xuống dưới bảng tin yêu thương */}
+        {/* Khu vực thẻ bài 3D hiển thị danh sách thành viên tham gia dự án */}
         <section className="py-16 max-w-7xl mx-auto px-4 border-t border-gray-900/50">
           <div className="text-center mb-12">
             <h2 className="text-2xl md:text-4xl font-bold font-vietnam text-vn-gold tracking-tight uppercase">
@@ -40,7 +44,7 @@ function App() {
             </h2>
           </div>
 
-          {/* Cấu trúc hiển thị danh sách các thẻ */}
+          {/* Cấu trúc hiển thị danh sách các thẻ bài 3D */}
           <div className="flex flex-wrap justify-center items-center gap-8 md:gap-10">
             <TheBai3D 
               anhBia="images/Hoasen.jpg" 

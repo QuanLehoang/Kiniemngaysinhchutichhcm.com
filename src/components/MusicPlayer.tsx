@@ -70,7 +70,6 @@ function MusicPlayer() {
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [showPlaylist, setShowPlaylist] = useState(false);
-  // Thêm biến trạng thái để biết người dùng đã chủ động tương tác bật/tắt/chọn nhạc chưa
   const [userInteracted, setUserInteracted] = useState(false);
   const audioRef = useRef<HTMLAudioElement>(null);
 
@@ -89,7 +88,6 @@ function MusicPlayer() {
 
   // Logic 2: Tự động phát nhạc khi phát hiện tương tác đầu tiên của người dùng trên trang web
   useEffect(() => {
-    // Nếu người dùng đã chủ động bấm nút điều khiển trên trình phát nhạc, tắt hẳn cơ chế autoplay này
     if (userInteracted) return;
 
     const tuDongPhatNhac = () => {
@@ -97,7 +95,7 @@ function MusicPlayer() {
         audioRef.current.play()
           .then(() => {
             setIsPlaying(true);
-            setUserInteracted(true); // Đánh dấu đã tương tác thành công
+            setUserInteracted(true);
             goBoSuKien();
           })
           .catch((loi) => {
@@ -121,8 +119,36 @@ function MusicPlayer() {
     return () => goBoSuKien();
   }, [isPlaying, userInteracted]);
 
+  // Logic mới: Lắng nghe tín hiệu điều khiển âm thanh phát ra từ hệ thống video tư liệu
+  useEffect(() => {
+    const nhanTinHieuAmThanh = (e: Event) => {
+      const hanhDong = (e as CustomEvent).detail;
+      
+      if (audioRef.current) {
+        if (hanhDong === 'tat') {
+          audioRef.current.pause();
+          setIsPlaying(false);
+        } else if (hanhDong === 'bat') {
+          audioRef.current.play()
+            .then(() => {
+              setIsPlaying(true);
+              setUserInteracted(true); // Đánh dấu tương tác để tránh bị autoplay xung đột
+            })
+            .catch((loi) => {
+              console.log("Không thể tự động phát lại nhạc nền:", loi);
+            });
+        }
+      }
+    };
+
+    window.addEventListener('su_kien_nhac_nen', nhanTinHieuAmThanh);
+    return () => {
+      window.removeEventListener('su_kien_nhac_nen', nhanTinHieuAmThanh);
+    };
+  }, []);
+
   const togglePlay = () => {
-    setUserInteracted(true); // Đánh dấu người dùng đã chủ động can thiệp
+    setUserInteracted(true);
     setIsPlaying(!isPlaying);
   };
 
