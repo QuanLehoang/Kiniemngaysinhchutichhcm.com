@@ -35,7 +35,7 @@ function VideoTuLieu() {
         {/* Tiêu đề phần xem video */}
         <div className="flex items-center gap-2 text-amber-500/90 mb-4">
           <Video size={18} />
-          <span className="text-xs font-semibold tracking-widest uppercase">Thước phim tư liệu</span>
+          <span className="text-xs font-semibold tracking-widest uppercase">Video kỉ niệm</span>
         </div>
 
         <h2 className="text-xl sm:text-2xl font-bold text-white mb-6 tracking-tight">
