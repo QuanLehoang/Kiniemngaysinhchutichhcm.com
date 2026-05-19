@@ -6,7 +6,7 @@ const milestones = [
   {
     year: '1890',
     title: 'Năm sinh',
-    desc: 'Ngày 19/05/1890, Bác sinh ra tại làng Hoàng Trù, quê nội ở làng Sen, Nam Đàn, Nghệ An.',
+    desc: 'Bác Hồ sinh ngày 19/5/1890 vào mùa sen nở tại làng Hoàng Trù, quê mẹ ở Nam Đàn, Nghệ An. Làng Sen là quê nội, nơi Người sống từ năm 5 tuổi đến năm 11 tuổi và gắn liền với tuổi thơ của Bác.',
     icon: <Calendar className="w-6 h-6" />,
   },
   {
